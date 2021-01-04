@@ -1,0 +1,14 @@
+class Solution {
+    public int[] runningSum(int[] nums) {
+        int size= nums.length;
+        //declare array below
+        int[] intArray = new int[size];
+        int start = nums[0];
+        int total=0;
+        for(int i=0; i<size;i++){
+            total = nums[i]+total;
+            intArray[i] = total;
+        }
+        return intArray;
+    }
+}
